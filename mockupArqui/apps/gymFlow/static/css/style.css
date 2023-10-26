@@ -1,0 +1,152 @@
+*{
+    font-family: 'Geologica', sans-serif;
+}
+
+.error{
+    color: red;
+}
+
+#bgnlgn{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -2;
+}
+
+#contlgn{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+#img-1 {
+    z-index: 1;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: end;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#img-1 img{
+    height: 400px;
+    width: 600px;
+}
+
+#text-1 {
+    text-align: center;
+}
+
+
+#img-2 {
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: end;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#img-2 img{
+    height: 400px;
+    width: 600px;
+}
+
+#text-2 {
+    text-align: center;
+}
+
+#img-3 {
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: end;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#img-3 img{
+    height: 400px;
+    width: 600px;
+}
+
+#text-3 {
+    text-align: center;
+}
+
+#img-4 {
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: end;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#img-4 img{
+    height: 400px;
+    width: 600px;
+}
+
+#text-4 {
+    text-align: center;
+}
+
+.one {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(12, 207, 87);
+}
+
+.two {
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    height: 75vh;
+    width: 100%;
+    background-color: white;
+}
+
+.three {
+    position: absolute;
+    top: 175vh;
+    left: 0;
+    height: 75vh;
+    width: 100%;
+    background-color: rgb(12, 207, 87);
+}
+
+.four {
+    position: absolute;
+    top: 250vh;
+    left: 0;
+    height: 75vh;
+    width: 100%;
+    background-color: white;
+}
+
+.two-1 {
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    height: 110vh;
+    width: 100%;
+    background-color: white;
+}

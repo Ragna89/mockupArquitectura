@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Geologica">
+    <title>Login</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="static/img/GYM-FLOW-LOGO.png" alt="" width="40px" height="40px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <img id="bgnlgn" src="static/img/El-mercado-de-equipos-de-fitness-facturará-U16.310-millones-para-2028-scaled.jpg" alt="" id="bgnlgn">
+    <form id="loginform" method="POST"> {% csrf_token %}
+        <div class="form-group">
+            <div id="contlgn" class=" d-flex align-items-center mt-5">
+                <div class="container col-md-4" style="background: rgba(51,51,51,0.8); padding: 5%;">
+                    <div class="d-flex mx-auto mb-3"><h4 style="color: white;">Iniciar Sesion</h4><br></div>
+                    <br>
+                    <div class="col align-items-center">
+                        <label for="username" class="form-label" style="color: white;">Ingrese Nombre Usuario:</label>
+                        <input type="text" id="username" name="username" placeholder="Usuario" class="form-control">
+                    </div>
+                    <br>
+                    <div class="col align-items-center">                            
+                        <label for="password" class="form-label" style="color: white;">Ingrese Contraseña:</label>
+                        <input type="password" placeholder="*********" id="password" name="password" class="form-control">
+                    </div>
+                    <div class="d-flex justify-content-center" style=" padding: 2%; margin-top: 4%;">
+                        <button class="btn btn-outline-dark" type="submit" style="color: white;">Ingresar</button>
+                    </div>
+                    <br>
+                    <div class="d-flex justify-content-center" style="color: white;">
+                        <div><p>¿No posee una Cuenta?</p></div>
+                        <div style="margin-left: 10px;"><a style="color: rgb(99, 218, 214);" href="/registro">Registrarse</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="static/js/jquery-3.6.4.min.js"></script>
+    <script src="static/js/jquery.validate.min.js"></script>
+    <script src="static/js/funciones.js"></script>
+    <script src="static/js/forms.js"></script>
+</body>
+</html>
