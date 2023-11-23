@@ -9,6 +9,28 @@
     <title>Register</title>
 </head>
 <body>
+    <div class="modal fade" id="Propuesta" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">🏋️‍♂️💪💯Wayne Tech💯💪🏋️‍♂️</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center">
+                    Esta propuesta de arquitectura ha sido creada por Wayne Tech con el fin de facilitar rutinas de ejercicios y dietas a aquellas personas que desean llevar una vida mas saludable.
+                    <br>
+                    🏋️‍♂️Francisco Caceres🏋️‍♂️
+                    <br>
+                    💪Daniel Ponce💪
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+    </div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">
@@ -21,6 +43,9 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#Propuesta">Nuestra propuesta</a>
                     </li>
                 </ul>
             </div>

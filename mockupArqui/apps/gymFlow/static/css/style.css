@@ -110,6 +110,15 @@
     position: absolute;
     top: 0;
     left: 0;
+    height: 20vh;
+    width: 100%;
+    background-color: rgb(12, 207, 87);
+}
+
+.first {
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 100%;
     background-color: rgb(12, 207, 87);
@@ -117,18 +126,36 @@
 
 .two {
     position: absolute;
+    top: 20vh;
+    left: 0;
+    height: 80vh;
+    width: 100%;
+    background-color: white;
+}
+
+.second {
+    position: absolute;
     top: 100vh;
     left: 0;
-    height: 75vh;
+    height: 80vh;
     width: 100%;
     background-color: white;
 }
 
 .three {
     position: absolute;
-    top: 175vh;
+    top: 100vh;
     left: 0;
     height: 75vh;
+    width: 100%;
+    background-color: rgb(12, 207, 87);
+}
+
+.third {
+    position: absolute;
+    top: 180vh;
+    left: 0;
+    height: 80vh;
     width: 100%;
     background-color: rgb(12, 207, 87);
 }

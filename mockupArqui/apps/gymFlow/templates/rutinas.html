@@ -9,6 +9,28 @@
     <title>Rutinas</title>
 </head>
 <body>
+    <div class="modal fade" id="Propuesta" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">🏋️‍♂️💪💯Wayne Tech💯💪🏋️‍♂️</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center">
+                    Esta propuesta de arquitectura ha sido creada por Wayne Tech con el fin de facilitar rutinas de ejercicios y dietas a aquellas personas que desean llevar una vida mas saludable.
+                    <br>
+                    🏋️‍♂️Francisco Caceres🏋️‍♂️
+                    <br>
+                    💪Daniel Ponce💪
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+    </div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">
@@ -22,6 +44,9 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/">Inicio</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#Propuesta">Nuestra propuesta</a>
+                    </li>
                 </ul>
                 <ul class="d-flex" role="search">
                     <button class="btn btn-outline-primary" type="submit">User01</button>
@@ -30,15 +55,105 @@
             </div>
         </div>
     </nav>
+    <div class="modal fade" id="rutina" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Construye tu rutina</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Selecciona tu rango de peso
+                <div class="mt-3">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#altura">40 - 60 Kg</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#altura">61 - 80 Kg</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#altura">81 - 100 Kg</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#altura">101 - 120 Kg</button>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="altura" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Construye tu rutina</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Selecciona tu rango de altura
+                <div class="mt-3">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tiempo">130-150 cm</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tiempo">151-170 cm</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tiempo">171-190 cm</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tiempo">191-210 cm</button>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="tiempo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Construye tu rutina</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ¿Cuantas horas a la semana estas dispuesto a entrenar?
+                <div class="mt-3">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rutinaCreada">1 - 2 horas</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rutinaCreada">3 - 4 horas</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rutinaCreada">5 - 6 horas</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rutinaCreada">7 - 9 horas</button>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="rutinaCreada" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">¡¡Tu rutina y dieta han sido generadas!!</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Flexiones: 100 diarias.
+                <br>
+                Addominales: 100 diarias.
+                <br>
+                Sentadillas: 100 diarias.
+                <br>
+                Correr 10 Km diarios.
+                <br>
+                ¡No olvides comer frutas y verduras diariamente!
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+    </div>
 
-    <section class="one">
+    <section class="first">
         <div class="d-flex container" id="img-1">
             <div class="row-cols row">
                 <div class="col">
                     <img src="static/img/fitness.jpg" alt="">
                 </div>
                 <div class="col mt-5" id="text-1">
-                    <h1>Solicita tu rutina y dieta</h1>
+                    <h1>Construye tu rutina y dieta</h1>
                     <br>
                     <h4>Basado en tu peso actual y tu peso objetivo.</h4>
                     <br>
@@ -46,15 +161,117 @@
                     <br>
                     <h4>Un entrenamiento que te ayudara a conseguir tu cambio físico.</h4>
                     <ul class="col mt-3">
-                        <a href=""><button class="btn btn-primary" type="submit" id="boton-reg">
-                            <h5>Solicitar</h5>
-                        </button></a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rutina">Hacer rutina</button>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-    <section class="two">
+
+    <div class="modal fade" id="progreso" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Registra tu progreso</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ¿Cuantas horas entrenaste esta semana?
+                <div class="mt-3">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#progreso1-2">1 - 2 horas</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#progreso3-4">3 - 4 horas</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#progreso5-6">5 - 6 horas</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#progreso7-9">7 - 9 horas</button>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="progreso1-2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">¡¡Tu progreso ha sido registrado con exito!!</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Has entrenado entre 1 - 2 horas esta semana.
+                <br>
+                Tu promedio bajo con respecto a las semanas anteriores.
+                <br>
+                ¡No te rindas!
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="progreso3-4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">¡¡Tu progreso ha sido registrado con exito!!</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Has entrenado entre 3 - 4 horas esta semana.
+                <br>
+                Tu promedio se mantuvo con respecto a las semanas anteriores.
+                <br>
+                ¡Aun puedes mejorar!
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="progreso5-6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">¡¡Tu progreso ha sido registrado con exito!!</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Has entrenado entre 5 - 6 horas esta semana.
+                <br>
+                Tu promedio ha aumentado con respecto a las semanas anteriores.
+                <br>
+                ¡Lo estas haciendo increible!
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="progreso7-9" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">¡¡Tu progreso ha sido registrado con exito!!</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Has entrenado entre 7 - 9 horas esta semana.
+                <br>
+                Tu promedio aumento significativamente con respecto a las semanas anteriores.
+                <br>
+                ¡¡YOU ARE THE BOSS!!
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <section class="second">
         <div class="d-flex container" id="img-2">
             <div class="row row-cols">
                 <div class="col-6 mt-5" id="text-2">
@@ -66,9 +283,7 @@
                     <br>
                     <h4>Marca tu progreso y date cuenta cuanto has progresado.</h4>
                     <ul class="col mt-3">
-                        <button class="btn btn-primary" type="submit" id="boton-reg">
-                            <h5>Marcar Progreso</h5>
-                        </button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#progreso">Marcar Progreso</button>
                     </ul>
                 </div>
                 <div class="col-6">
@@ -77,7 +292,7 @@
             </div>
         </div>
     </section>
-    <section class="three">
+    <section class="third">
         <div class="d-flex container" id="img-3">
             <div class="row">
                 <div class="col">
@@ -92,14 +307,13 @@
                     <br>
                     <h4>Por tan solo $29.990 mensuales</h4>
                     <ul class="col mt-3">
-                        <button class="btn btn-primary" type="submit" id="boton-reg">
-                            <h5>Suscribete</h5>
-                        </button>
+                        <button class="btn btn-primary" type="submit" id="boton-reg">Suscribete</button>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>

@@ -9,6 +9,28 @@
     <title>Inicio</title>
 </head>
 <body>
+    <div class="modal fade" id="Propuesta" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">🏋️‍♂️💪💯Wayne Tech💯💪🏋️‍♂️</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center">
+                    Esta propuesta de arquitectura ha sido creada por Wayne Tech con el fin de facilitar rutinas de ejercicios y dietas a aquellas personas que desean llevar una vida mas saludable.
+                    <br>
+                    🏋️‍♂️Francisco Caceres🏋️‍♂️
+                    <br>
+                    💪Daniel Ponce💪
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+    </div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">
@@ -22,6 +44,9 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/">Inicio</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#Propuesta">Nuestra propuesta</a>
+                    </li>
                 </ul>
                 <ul class="d-flex" role="search">
                     <a href="/login">    
@@ -34,23 +59,15 @@
             </div>
         </div>
     </nav>
-    <section class="one">
-        <div class="d-flex container" id="img-1">
-            <div class="row-cols row">
-                <div class="col">
-                    <img src="static/img/Las-mejores-8-aplicaciones-de-rutinas-para-el-gimnasio-1.jpg" alt="">
-                </div>
-                <div class="col mt-5" id="text-1">
-                    <h1>GYM FLOW</h1>
-                    <br>
-                    <h4>Transforma tu cuerpo, transforma tu vida.</h4>
-                    <br>
-                    <h4>Es hora de ponerte en forma en nuestros gimnasios para que seas capaz de redefinir tus limites y reescribir tu historia.</h4>
-                    <br>
+    <section class="one d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col mt-5 text-center">
+                    <h1>🏋️‍♂️💪💯GYMFLOW💯💪🏋️‍♂️</h1>
                 </div>
             </div>
         </div>
-    </section>
+    </section>    
     <section class="two">
         <div class="d-flex container" id="img-2">
             <div class="row row-cols">
@@ -82,10 +99,8 @@
                     <br>
                     <h4>Un entrenamiento completo</h4>
                     <ul class="col mt-3">
-                        <a href="/login">
-                            <button class="btn btn-primary" type="submit" id="boton-reg">
-                                <h5>Unete aqui</h5>
-                            </button>
+                        <a href="/registro">
+                            <button class="btn btn-primary" type="submit" id="boton-reg">Registrarse</button>
                         </a>
                     </ul>
                 </div>
